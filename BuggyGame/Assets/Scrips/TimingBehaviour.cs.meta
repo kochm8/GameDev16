@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8f05b619b2740bf44ba8f57d8df382fa
+timeCreated: 1460480237
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - _carScript: {instanceID: 0}
+  - countDownSoundClip: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
