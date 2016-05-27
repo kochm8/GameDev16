@@ -16,7 +16,7 @@ public class InitSteeringFish : MonoBehaviour {
         //spawn of buggy under water
         if (transform.position.y < underwaterLevel)
         {
-            FishCount fc = FishCount.Instance;
+            EntityCount fc = EntityCount.Instance;
             if (fc.canSpawn())
             {
                 spawnFish();
@@ -28,7 +28,7 @@ public class InitSteeringFish : MonoBehaviour {
     public void spawnFish()
     {
         //increase counter
-        FishCount fc = FishCount.Instance;
+        EntityCount fc = EntityCount.Instance;
         fc.increaseCounter();
 
         //calc fish Position
