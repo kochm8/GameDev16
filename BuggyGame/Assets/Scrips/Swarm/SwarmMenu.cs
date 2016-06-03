@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Collections;
 
 public class SwarmMenu : MonoBehaviour {
-    static string swarm_prefab = "Swarm/Swarm";
+    static string swarm_prefab = "Swarm/SwarmFollow";
     // Add a menu item named "Do Something" to MyMenu in the menu bar.
     [MenuItem("GameObject/SwarmFollow")]
     static void CreateSwarmObject()

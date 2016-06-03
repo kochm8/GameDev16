@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnitySteer.Behaviors;
 
 public class SwarmInitiatior : MonoBehaviour {
 
@@ -16,17 +17,25 @@ public class SwarmInitiatior : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("SwarmInitiator:UPDATE");
         if(this.canSpawn())
         {
+            //Debug.Log("Spawn Entity!");
             this.spawnEntity();
         }
+        GameObject efb = transform.GetChild(0).gameObject;
+        GameObject model = efb.transform.GetChild(0).gameObject;
+        //Debug.Log("EFB:");
+        //Debug.Log(efb.transform.localPosition);
+        //Debug.Log("Model:");
+
+
     }
 
     protected virtual void spawnEntity()
     {
         //increase counter
         this.increaseCounter();
+        Debug.Log("PARENT");
         // DO SHIT
     }
 
@@ -47,7 +56,6 @@ public class SwarmInitiatior : MonoBehaviour {
 
     public virtual bool canSpawn()
     {
-        Debug.Log(this.getCounter());
         return this.getCounter() < numEntities ? true : false;
     }
 
